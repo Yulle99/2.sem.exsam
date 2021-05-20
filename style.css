@@ -1,0 +1,35 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+
+/* nav style */
+.topnav{
+    background: #EFEFEF;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ddmenu{
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 2px;
+    justify-content: space-evenly;
+
+}
+
+/* footer style*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background:#EFEFEF;
+    padding-left: 25px; ;
+}
+h3{
+    
+}
