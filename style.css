@@ -15,21 +15,73 @@ list-style: none;
 
 .ddmenu{
     background-color: white;
+    width: 100%;
+    height: 60px;
     padding: 25px;
-    display: flex;
-    text-align: left;
-    letter-spacing: 2px;
-    justify-content: space-evenly;
+}
+
+.ddmenu ul{
+    float: left;
+}
+
+.ddmenu ul li{
+    float: left;
+    position: relative;
+}
+
+.ddmenu ul li a{/*skal skiftes*/
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 24px 14px;
+}
+
+.ddmenu ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
 
 }
+
+.ddmenu ul li:hover ul{
+    display: flex;
+
+}
+
+.ddmenu ul li ul li a{
+    padding: 12px 14px;
+}
+
+.ddmenu ul li ul li a:hover{
+    background-color:#f3f3f3;
+}
+
 
 /* footer style*/
 footer{
     display: flex;
     justify-content: space-between;
     background:#EFEFEF;
-    padding-left: 25px; ;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-h3{
+/* index style*/
+.populærekategori div{
     
+
+    
+}
+
+.populærekategori img{
+    height: 200px;
+    width: 200px;
+}
+
+/*midlertid skal slates*/
+
+main img{
+    height: 200px;
+    width: 200px;
 }
