@@ -8,20 +8,27 @@ list-style: none;
 /* nav style */
 .topnav{
     background: #EFEFEF;
-    padding: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.ddmenu{
-    background-color: white;
-    width: 100%;
-    height: 60px;
-    padding: 25px;
+.topnav img{
+    height:35px ;
+    width:35px;
 }
 
-.ddmenu ul{
-    float: left;
+.ddmenu{/* drop down menu*/
+    background-color: white;
+    height: 60px;
+    padding: 25px 90px 25px 90px;
+       
+}
+
+.ddmenu img{
+    width: 100px;
+    height: 100px;
 }
 
 .ddmenu ul li{
@@ -31,9 +38,9 @@ list-style: none;
 
 .ddmenu ul li a{/*skal skiftes*/
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    padding: 24px 14px;
+    font-family: Arial, Helvetica, sans-serif;/*menu font*/
+    font-size: 24px;
+    padding: 24px 24px;
 }
 
 .ddmenu ul li ul{
@@ -46,7 +53,11 @@ list-style: none;
 
 .ddmenu ul li:hover ul{
     display: flex;
+}
 
+.ddmenu ul li:hover .ul2{
+    display: flex;
+    margin-top: 350px;
 }
 
 .ddmenu ul li ul li a{
@@ -57,6 +68,9 @@ list-style: none;
     background-color:#f3f3f3;
 }
 
+.ddmenu .mere{
+    float: right;
+}
 
 /* footer style*/
 footer{
@@ -64,9 +78,27 @@ footer{
     justify-content: space-between;
     background:#EFEFEF;
     padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 95px;
+    padding-right: 95px;
+        
 }
+
+footer p{
+    margin: 10px;
+    font-size: 24px;
+}
+
+footer .icon div{
+ display: flex;
+ margin: 10px;
+}
+
+footer img{
+height: 45px;
+width: 45px;
+}
+
+
 /* index style*/
 .populærekategori div{
     
