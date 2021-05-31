@@ -28,9 +28,6 @@ list-style: none;
 }
 
 /*body*/
-body{
-    background-color:lightgrey;
-}
 
 
 /* footer*/
@@ -62,15 +59,31 @@ width: 45px;
 section{
     padding-left: 50px;
     padding-right: 30px;
-    margin-top: 100px;
 }
 
+
+
 .nyhed{
+    width: 79%;
+    height: 300px;
     color: white;
-    margin-top: 0;
+}
+
+.nyhed:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
     background-image: url("img/cyklister-edit.jpg");
-    background-repeat: no-repeat;
-    background-size: 200% 200%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(6deg);
+    margin-top: 10px;
+    z-index: -1;
+
 }
 
 .nyhed h1 {
@@ -84,18 +97,51 @@ section{
     margin-top: 25px;
     margin-left: 85px;
 }
-
-.populærekategori img, .tilbud img{
+.populærekategori{
+    width: 79%;
     height: 300px;
-    width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.populærekategori:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-color: lawngreen;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(6deg);
+    margin-top: 400px;
+    z-index: -1;
+
 }
 
 .værksted{
-    background-image: url("img/download.jpg");
-    background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.værksted:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-image: url("img/download.jpg");
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(-6deg);
+    margin-top: 700px;
+    z-index:-1;
+
 }
 
 .værksted h1{
@@ -111,12 +157,55 @@ section{
 .værksted a{
     margin-top: 25px;
 }
+
+.tilbud{
+    width: 79%;
+    height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.tilbud:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-color: lawngreen;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    margin-top: 1050px;
+    z-index: -1;
+
+}
+
 .miljø{
-    background-image: url("img/gettyimages-168346757_web.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 250%;
+    color: white;
+    
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.miljø:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-image: url("img/gettyimages-168346757_web.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(6deg);
+    margin-top: 1400px;
+    z-index: -1;
+
 }
 .miljø h1, .lejencykel h1{
     font-size: 32px;
@@ -130,6 +219,30 @@ section{
 
 .miljø a, .lejencykel a{
     margin-top: 25px;
+}
+
+.lejencykel{
+    color:#fff;
+    
+}
+
+.lejencykel:after{
+    position:absolute ;
+    width: 100%;
+    height: 50%;
+    content: '';
+    background-image: url("img/cyklister-edit.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    margin-top: 1700px;
+    z-index: -1;
+
 }
 
 button{
