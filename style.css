@@ -5,6 +5,10 @@ text-decoration: none;
 list-style: none;
 }
 /*mobil style*/
+/*body*/
+body{
+    background-color: darkgray;
+}
 /*header*/
 /* nav */
 .topnav{
@@ -26,8 +30,6 @@ list-style: none;
 .ddmenu{
     display: none;
 }
-
-/*body*/
 
 
 /* footer*/
@@ -56,23 +58,17 @@ width: 45px;
 }
 
 /*index(forside)*/
-section{
-    padding-left: 50px;
-    padding-right: 30px;
-}
-
-
 
 .nyhed{
-    width: 79%;
-    height: 300px;
+    position: relative;
+    width: 100%;
+    height: 400px;
     color: white;
+    box-sizing: border-box;
 }
 
 .nyhed:after{
-    position:absolute ;
-    width: 100%;
-    height: 50%;
+    position:absolute;
     content: '';
     background-image: url("img/cyklister-edit.jpg");
     top:0;
@@ -81,65 +77,60 @@ section{
     left: 0;
     transform-origin: top right;
     transform: skewY(6deg);
-    margin-top: 10px;
     z-index: -1;
 
 }
 
 .nyhed h1 {
     font-size: 32px;
-    margin-top: 50px;
-    margin-left: 85px;
+    padding-top: 70px;
+    padding-left: 100px;
 }
 
 .nyhed p{
     font-size: 16px ;
     margin-top: 25px;
-    margin-left: 85px;
+    margin-left: 100px;
+}
+
+.nyhed button{
+    margin-left: 20%;
+    margin-top: 50px;
 }
 .populærekategori{
-    width: 79%;
-    height: 300px;
-    box-sizing: border-box;
-    margin-bottom: 100px;
-}
-
-.populærekategori:after{
-    position:absolute ;
+    position: relative;
     width: 100%;
-    height: 50%;
-    content: '';
-    background-color: lawngreen;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin: top right;
-    transform: skewY(6deg);
-    margin-top: 400px;
-    z-index: -1;
-
+    height: 400px;
+    box-sizing: border-box;
 }
+
+.populærekategori h2{
+    text-align: center;
+}
+
+
 
 .værksted{
-    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 400px;
     padding-top: 50px;
     padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .værksted:after{
-    position:absolute ;
+    position:absolute;
     width: 100%;
-    height: 50%;
+    height: 100%;
     content: '';
-    background-image: url("img/download.jpg");
+    background-color: lightblue;
     top:0;
     right: 0;
     bottom: 0;
     left: 0;
     transform-origin: top left;
     transform: skewY(-6deg);
-    margin-top: 700px;
     z-index:-1;
 
 }
@@ -152,17 +143,18 @@ section{
 .værksted p{
     font-size: 16px;
     margin-top: 25px;
+    padding:0px 30px 20px 30px;
 }
 
 .værksted a{
-    margin-top: 25px;
+    padding: 10px 30px;
+
 }
 
 .tilbud{
-    width: 79%;
+    width:100%;
     height: 300px;
     box-sizing: border-box;
-    margin-bottom: 100px;
 }
 
 .tilbud:after{
@@ -170,29 +162,32 @@ section{
     width: 100%;
     height: 50%;
     content: '';
-    background-color: lawngreen;
+    background-color: darkgrey;
     top:0;
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: top right;
-    transform: skewY(-6deg);
-    margin-top: 1050px;
+    transform-origin: top left;
+    transform: skewY(6deg);
     z-index: -1;
+    margin-top: 1250px;
 
 }
 
 .miljø{
+    position: relative;
     color: white;
-    
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
 }
 
 .miljø:after{
-    position:absolute ;
+    position:absolute;
     width: 100%;
-    height: 50%;
+    height: 100%;
     content: '';
     background-image: url("img/gettyimages-168346757_web.jpg");
     background-repeat: no-repeat;
@@ -202,8 +197,7 @@ section{
     bottom: 0;
     left: 0;
     transform-origin: top right;
-    transform: skewY(6deg);
-    margin-top: 1400px;
+    transform: skewY(-6deg);
     z-index: -1;
 
 }
@@ -213,23 +207,27 @@ section{
 }
 
 .miljø p, .lejencykel p{
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 25px;
+    padding: 0px 50px 20px 50px;
 }
 
 .miljø a, .lejencykel a{
-    margin-top: 25px;
+    padding: 0px 50px;
 }
 
 .lejencykel{
     color:#fff;
+    width:100%;
+    height: 300px;
+    box-sizing: border-box;
     
 }
 
 .lejencykel:after{
     position:absolute ;
     width: 100%;
-    height: 50%;
+    height: 40%;
     content: '';
     background-image: url("img/cyklister-edit.jpg");
     background-repeat: no-repeat;
@@ -238,10 +236,10 @@ section{
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: top right;
-    transform: skewY(-6deg);
-    margin-top: 1700px;
+    transform-origin: top left;
+    transform: skewY(6deg);
     z-index: -1;
+    margin-top: 1800px;
 
 }
 
