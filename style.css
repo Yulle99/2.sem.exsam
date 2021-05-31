@@ -4,6 +4,54 @@ padding: 0;
 text-decoration: none;
 list-style: none;
 }
+/*mobil style*/
+
+/* nav style */
+.topnav{
+    background: #EFEFEF;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topnav img{
+    height:35px ;
+    width:35px;
+}
+
+.ddmenu img{
+    display: none;
+}
+
+/* footer style*/
+footer{
+    background:#EFEFEF;
+    padding: 10px;
+}
+
+footer div{
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 20px;
+    font-size: 16px;
+}
+
+footer .icon div{
+ display: flex;
+ margin: 10px;
+}
+
+footer img{
+height: 45px;
+width: 45px;
+}
+
+
+@media (min-width:1000px){
+/*pc style*/
 
 /* nav style */
 .topnav{
@@ -71,49 +119,22 @@ list-style: none;
 .ddmenu .mere{
     float: right;
 }
+/*footer style*/
 
-/* footer style*/
 footer{
     display: flex;
     justify-content: space-between;
-    background:#EFEFEF;
-    padding: 10px;
     padding-left: 95px;
     padding-right: 95px;
         
 }
 
+footer div{
+    margin-top: 10px;
+}
+
 footer p{
-    margin: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
-footer .icon div{
- display: flex;
- margin: 10px;
-}
-
-footer img{
-height: 45px;
-width: 45px;
-}
-
-
-/* index style*/
-.populærekategori div{
-    
-
-    
-}
-
-.populærekategori img{
-    height: 200px;
-    width: 200px;
-}
-
-/*midlertid skal slates*/
-
-main img{
-    height: 200px;
-    width: 200px;
 }
