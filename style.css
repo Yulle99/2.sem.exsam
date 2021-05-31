@@ -68,6 +68,9 @@ section{
 .nyhed{
     color: white;
     margin-top: 0;
+    background-image: url("img/cyklister-edit.jpg");
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
 }
 
 .nyhed h1 {
@@ -87,6 +90,14 @@ section{
     width: 300px;
 }
 
+.værksted{
+    background-image: url("img/download.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .værksted h1{
     font-size: 32px;
     text-align: center;
@@ -100,7 +111,13 @@ section{
 .værksted a{
     margin-top: 25px;
 }
-
+.miljø{
+    background-image: url("img/gettyimages-168346757_web.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 250%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .miljø h1, .lejencykel h1{
     font-size: 32px;
     text-align: center;
