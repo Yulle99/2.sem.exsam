@@ -288,25 +288,32 @@ img {vertical-align: middle;}
 
 
 
-/*Mærker*/
+/*Mærker - Nicoline*/
 .mærker-kort {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px 30px;
-    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px 20px;
+    padding: 100px;
     
   }
   .mærke {
     background-color: var(--white);
     box-shadow: 5px 10px 18px #a0b4b8;
+    border-radius: 15px;
     padding: 10px;
+    padding-left: 40px;
+    text-align: center;
+    height:110px;
+    width: 160px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
   }
-  .mærke.img {
-    vertical-align: auto;
-  }
+
 /*
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
 */
 
 @media (min-width:1000px){
