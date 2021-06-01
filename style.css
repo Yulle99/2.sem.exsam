@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&display=swap');
 :root{
     --white: #F7F7F7;
     --greenblue: #5E7B81;
@@ -286,14 +287,14 @@ img {vertical-align: middle;}
  text-align:center;
 }
 
-
-
 /*Mærker - Nicoline*/
+
 .mærker-kort {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 40px 20px;
-    padding: 100px;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 15px;
+    justify-content: center;
+    padding-bottom: 70px;
     
   }
   .mærke {
@@ -301,22 +302,26 @@ img {vertical-align: middle;}
     box-shadow: 5px 10px 18px #a0b4b8;
     border-radius: 15px;
     padding: 10px;
-    padding-left: 40px;
+    padding-left: 25px;
     text-align: center;
-    height:110px;
-    width: 160px;
+    height: 80px;
+    width: 120px;
     display:flex;
     flex-direction:column;
     justify-content:center;
   }
+  .mærke img {
+    width: 100px;
+  }
+  /* Brugt til "mærker"
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+  */
 
-/*
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
-*/
 
 @media (min-width:1000px){
-/*pc style*/
+/*pc style - Yulin*/
 
 /* nav style */
 .topnav{
@@ -384,6 +389,9 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
 .ddmenu .mere{
     float: right;
 }
+
+
+
 /*footer style*/
 
 footer{
@@ -403,3 +411,74 @@ footer p{
 }
 
 }
+
+@media (min-width:700px){
+    /*laptop-format*/
+/*Mærker - Nicoline*/
+.mærker-alt{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+.mærker-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  
+  .mærker-menu a {
+    padding: 2px 10px 2px 30px;
+    font-size: 16px;
+    color: var(--greenblue);
+    display: block;
+  }
+  
+  .mærker-menu a:hover {
+    color: var(--lightblue);
+  }
+
+.mærker-kort {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px 20px;
+    padding: 100px;
+    
+  }
+  .mærke {
+    background-color: var(--white);
+    box-shadow: 5px 10px 18px #a0b4b8;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 70px;
+    text-align: center;
+    height:110px;
+    width: 160px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+/*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+
+Avenue logo: https://vindingcykelcenter.dk/
+Centurion logo: https://power2bike.com/elcykel-batteri/centurion-elcykler/
+Dresco logo: https://www.carlab.dk/maerker/dresco
+Ebsen bikes logo:http://www.cykelsmeden-amager.dk/?CYKLER
+Everton logo: http://www.everton.dk/
+Fuji logo: https://www.clipartmax.com/middle/m2H7i8N4N4b1N4Z5_fuji-was-established-in-japan-in-1899-now-owned-by-fuji-bikes/
+Kildemoes logo: http://www.egoing.dk/dk/om-elcykler/om-egoing-70/
+Monark logo: https://www.pricerunner.dk/mi/121057/Monark
+Nishiki logo: https://commons.wikimedia.org/wiki/File:Nishiki_wordmark.svg
+Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
+Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
+*/
