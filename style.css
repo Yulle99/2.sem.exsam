@@ -1,13 +1,22 @@
+:root{
+    --white: #F7F7F7;
+    --greenblue: #5E7B81;
+    --lightblue: #CAD7D9;
+    --brown: #BEB8A9; 
+}
+
+
 *{
 margin: 0;
 padding: 0;
 text-decoration: none;
 list-style: none;
+font-family: 'mukta malar';
 }
 /*mobil style*/
 /*body*/
 body{
-    background-color: darkgray;
+    background-color: var(--lightblue);
 }
 /*header*/
 /* nav */
@@ -279,8 +288,33 @@ img {vertical-align: middle;}
 
 
 
+/*Mærker - Nicoline*/
+.mærker-kort {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px 20px;
+    padding: 100px;
+    
+  }
+  .mærke {
+    background-color: var(--white);
+    box-shadow: 5px 10px 18px #a0b4b8;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 40px;
+    text-align: center;
+    height:110px;
+    width: 160px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
 
-
+/*
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
+*/
 
 @media (min-width:1000px){
 /*pc style*/
