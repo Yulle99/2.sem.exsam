@@ -254,7 +254,7 @@ width: 45px;
 }
 
 button{
-    background-color: wheat;
+    background-color: var(--brown);
     border: none;
     color: white;
     font-size:16px ;
@@ -262,6 +262,10 @@ button{
     padding: 10px 100px;
     border-radius: 25px; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .mySlides {display: none;}
@@ -328,6 +332,11 @@ img {vertical-align: middle;}
     flex-direction:column;
     justify-content:center;
   }
+    /*
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+    https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
+    */
   .mærke img {
     width: 100px;
   }
@@ -358,6 +367,10 @@ img {vertical-align: middle;}
     transform: skewY(5deg);
     z-index: -1;
     padding-top: 10%;
+}
+
+.baggrund-højre h1 {
+    padding-left: 5%;
 }
 
 .baggrund-venstre {
@@ -391,6 +404,7 @@ img {vertical-align: middle;}
 .mere-højre h1 {
     font-size: 30px;
     text-align: right;
+    padding-right: 5%;
 }
 
 .mere-venstre {
@@ -400,20 +414,29 @@ img {vertical-align: middle;}
 
 .mere-venstre h1 {
     font-size: 30px;
-    text-align: lef;
+    text-align: left;
+    padding-left: 5%;
 }
 
 .faq-box {
-    display: flex;
+    flex-direction: column;
+    padding: 5%;
 }
 
 .faq-højre {
-    text-decoration: underline;
-    
+    text-decoration: none;
+}
+
+.faq-højre a {
+    color: black;
 }
 
 .faq-venstre {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.faq-venstre a {
+    color: black;
 }
 
 .info {
@@ -428,14 +451,52 @@ img {vertical-align: middle;}
 
 .navn-mail {
     display: flex;
+    justify-content: space-evenly;
 }
 
+.navn-h1 {
+    height: 20px;
+    border-style: solid ;
+    border-color: #707070;
+    border-radius: 10px;
+    background-color: var(--white);
+}
 
-/*
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
-https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
-*/
+.mail-h1 {
+    height: 20px;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.skriv-her {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.skriv-her-h1 {
+    width: 90%;
+    height: 100px;
+    border-style: solid;
+    border-color: #707070;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: var(--white);
+}
+
+.send-besked {
+    background-color: var(--brown);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+/*Brugt til siden "mere"*/
+/*https://www.w3schools.com/tags/tag_input.asp besøgt d. 2/6*/
+
 
 @media (min-width:1000px){
 /*pc style - Yulin*/
