@@ -642,7 +642,71 @@ footer p{
     flex-direction:column;
     justify-content:center;
   }
+
+  /*Mere siden - Karoline (laptop format)*/
+.mere-højre {
+    padding-top: 5%;
 }
+
+  .mere-højre h1 {
+    font-size: 15px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.mere-højre h2 {
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.mere-venstre h1 {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.mere-venstre h2 {
+    font-size: 10px;
+    margin-top: -15px;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.faq-højre a:hover {
+    color: var(--greenblue);
+}
+
+.faq-venstre a:hover {
+    color: var(--greenblue);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h1,h2 {
+    font-size: 10px;
+}
+
+.navn-h1 {
+    width: 300px;
+}
+
+.mail-h1 {
+    width: 300px;
+}
+
+.send-besked {
+    width: 450px;
+}
+}
+
+
 /*Brugt til "mærker"
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
