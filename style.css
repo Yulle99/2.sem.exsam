@@ -599,3 +599,25 @@ Nishiki logo: https://commons.wikimedia.org/wiki/File:Nishiki_wordmark.svg
 Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
 Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
+
+/*cykler imi */
+.cykler-alt{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+.cykler-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .grid-damecykler {
+      
+  }
