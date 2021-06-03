@@ -624,6 +624,7 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
     grid-gap: 30px 15px;
     justify-content: center; 
     background-color: #f7f7f7;
+    background-position: center;
 
 
   }
@@ -635,13 +636,7 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
       display: flex;
   }
 
-  .damecykler {
-      padding: 20px;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+ 
 
    /*Brugt til "mærker"
 https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
