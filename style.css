@@ -618,12 +618,22 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
     padding-top: 30px;
     margin-top: 100px;
   }
-  .damecykler {
+  .damecyklergrid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px 15px;
-    justify-content: center;
-    padding-bottom: 70px; 
-    background-color: #fff;
+    justify-content: center; 
+    background-color: #f7f7f7;
 
+
+  }
+
+
+  .damecykler button {
+      height: 40px;
+      width: 40px;
+  }
+
+  .damecykler {
+      padding: 20px;
   }
