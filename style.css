@@ -288,12 +288,19 @@ img {vertical-align: middle;}
 }
 
 /*Mærker - Nicoline*/
+.overskrift-mærker{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.mærker-menu{
+    display: none;
+}
 .mærker-kort {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 30px 15px;
     justify-content: center;
-    padding-bottom: 70px;
+    padding: 30px 0px 70px 0px;
     
   }
   .mærke {
@@ -414,6 +421,13 @@ footer p{
 @media (min-width:700px){
     /*laptop-format*/
 /*Mærker - Nicoline*/
+.overskrift-mærker{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.mærker-menu{
+    display: block;
+}
 .mærker-alt{
     display: grid;
     grid-template-columns: auto auto;
@@ -456,7 +470,6 @@ footer p{
     border-radius: 15px;
     padding: 10px;
     padding-left: 70px;
-    text-align: center;
     height:110px;
     width: 160px;
     display:flex;
