@@ -17,7 +17,7 @@ font-family: 'mukta malar';
 /*mobil style*/
 /*body*/
 body{
-    background-color: var(--lightblue);
+    background-color: #CAD7D9;
 }
 /*header*/
 /* nav */
@@ -287,6 +287,25 @@ img {vertical-align: middle;}
  text-align:center;
 }
 
+
+/*produktbeskrivelse*/
+
+.produktbesk{
+    margin-left: 7.5%;
+    margin-right: 8%;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    padding-top: 300px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.gul_cykel{
+    max-width: 100%;
+  height: auto;
+}
+
 /*Mærker - Nicoline*/
 .overskrift-mærker{
     margin-top: 30px;
@@ -325,6 +344,105 @@ img {vertical-align: middle;}
   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
   */
 
+  /*Mere siden mobil - Karoline*/
+.baggrund-højre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+
+.baggrund-højre::after {
+    position:absolute;
+    content: '';
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(5deg);
+    z-index: -1;
+    padding-top: 10%;
+}
+
+.baggrund-venstre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+}
+
+.baggrund-venstre::after {
+    position:absolute;
+    content: '';
+    background-color: var(--white);
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(5deg);
+    z-index: -1;
+    padding-top: 10%;
+}
+
+.mere-højre {
+    text-align: right;
+    font-size: medium;
+}
+
+.mere-højre h1 {
+    font-size: 30px;
+    text-align: right;
+}
+
+.mere-venstre {
+    text-align: left;
+    font-size: medium;
+}
+
+.mere-venstre h1 {
+    font-size: 30px;
+    text-align: lef;
+}
+
+.faq-box {
+    display: flex;
+}
+
+.faq-højre {
+    text-decoration: underline;
+    
+}
+
+.faq-venstre {
+    text-decoration: underline;
+}
+
+.info {
+    display: flex;
+    
+}
+
+.info h1,h2 {
+    font-size: medium;
+    margin: 5%;
+}
+
+.navn-mail {
+    display: flex;
+}
+
+
+/*
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
+*/
 
 @media (min-width:1000px){
 /*pc style - Yulin*/
