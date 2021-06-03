@@ -349,6 +349,8 @@ padding: 0rem;
         text-align: left;   
         line-height: 2;
     }
+
+    
     
     /*Følgende kode kommer fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select:*/
     
@@ -356,7 +358,7 @@ padding: 0rem;
         position: relative;
         font-family: Arial;
         top: -837px;
-        left: 170px;
+        left: 148px;
       }
       
       .custom-select select {
