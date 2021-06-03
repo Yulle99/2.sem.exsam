@@ -14,13 +14,14 @@ text-decoration: none;
 list-style: none;
 font-family: 'mukta malar';
 }
+
 /*mobil style*/
 /*body*/
 body{
     background-color: #CAD7D9;
 }
 /*header*/
-/* nav */
+/* nav */ /*https://www.youtube.com/watch?v=rgUp302f_lY */
 .topnav{
     background: #EFEFEF;
     padding-left: 90px;
@@ -72,9 +73,9 @@ width: 45px;
 .nyhed{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     color: white;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .nyhed:after{
@@ -88,7 +89,7 @@ width: 45px;
     transform-origin: top right;
     transform: skewY(6deg);
     z-index: -1;
-
+  /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
 .nyhed h1 {
@@ -110,39 +111,52 @@ width: 45px;
 .populærekategori{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 350px;
     box-sizing: border-box;
+}
+
+.populærekategori:after{
+    position:absolute;
+    content: '';
+    background-color: var(--white);
+    top: -70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top left;
+    transform: skewY(6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
 .populærekategori h2{
     text-align: center;
+    box-sizing: border-box;
 }
 
-
+.populærekategori img, .tilbud img{
+    width: 200px;
+}
 
 .værksted{
     position: relative;
     width: 100%;
-    height: 400px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 450px;
     box-sizing: border-box;
 }
 
 .værksted:after{
     position:absolute;
-    width: 100%;
-    height: 100%;
     content: '';
-    background-color: lightblue;
-    top:0;
+    background-color: var(--lightblue);
+    top:-50px;
     right: 0;
     bottom: 0;
     left: 0;
-    transform-origin: top left;
+    transform-origin: top right;
     transform: skewY(-6deg);
     z-index:-1;
-
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
 .værksted h1{
@@ -152,7 +166,6 @@ width: 45px;
 
 .værksted p{
     font-size: 16px;
-    margin-top: 25px;
     padding:0px 30px 20px 30px;
 }
 
@@ -162,33 +175,32 @@ width: 45px;
 }
 
 .tilbud{
+    position: relative;
     width:100%;
-    height: 300px;
+    height: 400px;
     box-sizing: border-box;
 }
 
 .tilbud:after{
     position:absolute ;
-    width: 100%;
-    height: 50%;
     content: '';
-    background-color: darkgrey;
-    top:0;
+    background-color:var(--white);
+    top:-100px;
     right: 0;
     bottom: 0;
     left: 0;
     transform-origin: top left;
     transform: skewY(6deg);
-    z-index: -1;
-    margin-top: 1250px;
-
+    z-index:-1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
+
+
+
 
 .miljø{
     position: relative;
     color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
     width: 100%;
     height: 350px;
     box-sizing: border-box;
@@ -196,19 +208,16 @@ width: 45px;
 
 .miljø:after{
     position:absolute;
-    width: 100%;
-    height: 100%;
     content: '';
     background-image: url("img/gettyimages-168346757_web.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    top:0;
+    top:-100px;
     right: 0;
     bottom: 0;
     left: 0;
     transform-origin: top right;
     transform: skewY(-6deg);
     z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 
 }
 .miljø h1, .lejencykel h1{
@@ -227,30 +236,48 @@ width: 45px;
 }
 
 .lejencykel{
+    position: relative;
     color:#fff;
     width:100%;
-    height: 300px;
+    height: 350px;
     box-sizing: border-box;
     
 }
 
 .lejencykel:after{
     position:absolute ;
-    width: 100%;
-    height: 40%;
     content: '';
     background-image: url("img/cyklister-edit.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    top:0;
+    top:-50px;
     right: 0;
     bottom: 0;
     left: 0;
     transform-origin: top left;
     transform: skewY(6deg);
     z-index: -1;
-    margin-top: 1800px;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
+}
 
+.extra{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.extra:before{
+    position:absolute ;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color:inherit;
+    transform-origin: bottom left;
+    transform: skewY(-6deg);
+    z-index: -1;
+     /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
 button{
@@ -262,34 +289,13 @@ button{
     padding: 10px 100px;
     border-radius: 25px; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    text-align: center;
-    margin: auto;
+    /*https://www.w3schools.com/css/css3_buttons.asp*/
+}
+
+.slids{
     display: flex;
-    justify-content: center;
 }
 
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-.slideshow-container {
-    max-width: 300px;
-    position: relative;
-    margin: auto;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dotchange{
- text-align:center;
-}
 
 
 /*produktbeskrivelse*/
@@ -500,7 +506,7 @@ https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
 https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 
 
-@media (min-width:1000px){
+@media (min-width:700px){ /*laptop-format*/
 /*pc style - Yulin*/
 
 /* nav style */
@@ -569,6 +575,8 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 .ddmenu .mere{
     float: right;
 }
+/*index*/
+.populærekategori img
 
 
 
@@ -590,10 +598,9 @@ footer p{
     font-size: 20px;
 }
 
-}
 
-@media (min-width:700px){
-    /*laptop-format*/
+
+    
 /*Mærker - Nicoline*/
 .mærker-alt{
     display: grid;
@@ -726,3 +733,46 @@ Nishiki logo: https://commons.wikimedia.org/wiki/File:Nishiki_wordmark.svg
 Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
 Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
+
+@media (min-width:1000px){
+
+/*index baggrund*/
+.nyhed{
+    height: 550px;
+}
+
+.populærekategori{
+    height: 600px;
+}
+
+.populærekategori:after{
+    top:-300px;
+}
+
+.værksted{
+    height: 300px;
+    
+}
+
+.værksted:after{
+   top: -200px;
+}
+
+.tilbud{
+    height: 600px;
+}
+
+.miljø{
+    height: 450px;
+}
+
+.miljø:after{
+    top:-200px;
+    background-color: var(--white);
+    background-image: none;
+}
+
+.lejencykel:after{
+    top:-200px
+}
+}
