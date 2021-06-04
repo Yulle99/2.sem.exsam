@@ -15,7 +15,43 @@ list-style: none;
 font-family: 'mukta malar';
 }
 
-/*mobil style*/
+
+
+@media (max-width:700px){ /*mobil-format*/
+    .ddmenu img{
+        display: none;
+    }
+    .ddmenu{
+        display: none;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+      }
+
+    .slidspc{
+        display: none;
+    }
+    .miljø img{
+        display: none;
+    }
+
+    .værksted img{
+        display: none;
+    }
+}
+
+
 /*body*/
 body{
     background-color: #CAD7D9;
@@ -35,12 +71,6 @@ body{
     width:35px;
 }
 
-.ddmenu img{
-    display: none;
-}
-.ddmenu{
-    display: none;
-}
 
 
 /* footer*/
@@ -92,26 +122,31 @@ width: 45px;
   /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
+.nyhed div{
+    padding: 40px 20px 0px 120px;/*top/right/bottom/left*/
+}
+
 .nyhed h1 {
     font-size: 32px;
-    padding-top: 70px;
-    padding-left: 100px;
+    font-weight: bolder;
+    
 }
 
 .nyhed p{
     font-size: 16px ;
-    margin-top: 25px;
-    margin-left: 100px;
+    margin-bottom:20px;
 }
 
 .nyhed button{
-    margin-left: 20%;
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
 }
 .populærekategori{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 500px;
     box-sizing: border-box;
 }
 
@@ -141,7 +176,7 @@ width: 45px;
 .værksted{
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 500px;
     box-sizing: border-box;
 }
 
@@ -159,32 +194,35 @@ width: 45px;
      /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
-.værksted h1{
-    font-size: 32px;
+.overskrift{
+    font-size: 2px;
     text-align: center;
+    font-weight: 300;
 }
 
 .værksted p{
     font-size: 16px;
-    padding:0px 30px 20px 30px;
+    padding:0px 30px 30px 30px;
+    font-weight: lighter;
 }
 
 .værksted a{
     padding: 10px 30px;
+
 
 }
 
 .tilbud{
     position: relative;
     width:100%;
-    height: 400px;
+    height: 500px;
     box-sizing: border-box;
 }
 
 .tilbud:after{
     position:absolute ;
     content: '';
-    background-color:var(--white);
+    background-color: #fff;
     top:-100px;
     right: 0;
     bottom: 0;
@@ -210,7 +248,7 @@ width: 45px;
     position:absolute;
     content: '';
     background-image: url("img/gettyimages-168346757_web.jpg");
-    top:-100px;
+    top:-50px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -280,21 +318,47 @@ width: 45px;
      /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
+
+.pris{
+    font-size: 12px;
+    display: flex;
+    font-weight: bold;
+}
+   
+.prisfør{
+   color: rgb(214, 0, 0);
+   margin-right: 10px;
+}
+
+.slids{
+  margin-left: 80px;
+}
+
+.slids img{
+    width: 80%;
+    height: 200px;
+}
+
+.slids button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+
+
 button{
     background-color: var(--brown);
     border: none;
     color: white;
     font-size:16px ;
     text-align: center;
-    padding: 10px 100px;
-    border-radius: 25px; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 8px 20px 0 rgba(0,0,0,0.4);
     /*https://www.w3schools.com/css/css3_buttons.asp*/
 }
 
-.slids{
-    display: flex;
-}
+
 
 
 
@@ -500,6 +564,7 @@ button{
     border-radius: 10px;
 }
 
+
 /*Brugt til siden "mere"*/
 /*https://www.w3schools.com/tags/tag_input.asp besøgt d. 2/6
 https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
@@ -524,59 +589,101 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 }
 
 .ddmenu{/* drop down menu*/
-    background-color: white;
-    height: 60px;
-    padding: 25px 90px 25px 90px;
-       
+   
 }
 
-.ddmenu img{
-    width: 100px;
-    height: 100px;
-}
-
-.ddmenu ul li{
-    float: left;
-    position: relative;
-}
-
-.ddmenu ul li a{/*skal skiftes*/
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;/*menu font*/
-    font-size: 24px;
-    padding: 24px 24px;
-}
-
-.ddmenu ul li ul{
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding: 10px;
-
-}
-
-.ddmenu ul li:hover ul{
-    display: flex;
-}
-
-.ddmenu ul li:hover .ul2{
-    display: flex;
-    margin-top: 350px;
-}
-
-.ddmenu ul li ul li a{
-    padding: 12px 14px;
-}
-
-.ddmenu ul li ul li a:hover{
-    background-color:#f3f3f3;
-}
-
-.ddmenu .mere{
-    float: right;
-}
 /*index*/
-.populærekategori img
+.nyhed div{
+   margin-left: 1100px;
+}
+
+.nyhed h1{
+    padding-top: 0px ;
+    font-size: 48px;
+}
+
+.nyhed p{
+    font-size: 24px;
+}
+
+.nyhed button{
+    margin: 0;
+    width: 80%;
+}
+
+.værksted{
+    display: flex;
+}
+
+.værksted div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.værksted .overskrift{
+    font-size: 48px;
+}
+
+.værksted p{
+    font-size: 24px;
+}
+
+.værksted img{
+    height: 350px;
+    width: 300px;   
+}
+
+.miljø{
+    display: flex;
+    color: #000;
+}
+
+.miljø div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.miljø .overskrift{
+    font-size: 48px;
+}
+
+.miljø p{
+    font-size: 24px;
+    margin-left: 200px;
+}
+
+.miljø img{
+    height: 350px;
+    width: 300px;   
+}
+
+.slidspc div{
+    margin: 0;
+}
+
+.slidspc{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slidspc img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.slidspc button{
+    width: 100%;
+}
+
+
+.pris{
+    font-size: 24px;
+}
 
 
 
@@ -738,11 +845,11 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 
 /*index baggrund*/
 .nyhed{
-    height: 550px;
+    height: 600px;
 }
 
 .populærekategori{
-    height: 600px;
+    height: 450px;
 }
 
 .populærekategori:after{
@@ -759,7 +866,7 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 }
 
 .tilbud{
-    height: 600px;
+    height: 650px;
 }
 
 .miljø{
@@ -775,4 +882,27 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 .lejencykel:after{
     top:-200px
 }
+
+/*footer style*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 95px;
+        
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.slids{
+    display: none;
+}
+
 }
