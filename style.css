@@ -416,8 +416,13 @@ button{
     color: white;
     font-size:16px ;
     text-align: center;
+    padding: 10px 100px;
     border-radius: 10px; 
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 8px 20px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
     /*https://www.w3schools.com/css/css3_buttons.asp*/
 }
 
@@ -610,7 +615,7 @@ padding: 0rem;
 .baggrund-højre::after {
     position:absolute;
     content: '';
-    top:0;
+    top: 0px;
     right: 0;
     bottom: 0;
     left: 0;
