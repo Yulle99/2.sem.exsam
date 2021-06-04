@@ -15,7 +15,6 @@ list-style: none;
 font-family: 'mukta malar';
 }
 
-/*mobil style*/
 /*body*/
 body{
     background-color: #CAD7D9;
@@ -34,13 +33,107 @@ body{
     height:35px ;
     width:35px;
 }
+/*https://  www.youtube.com/watch?v=wlCPOwBr7no*/
 
-.ddmenu img{
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5;
+}
+
+.menu-icons{
+    color: #eee;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translatey(-50%);
     display: none;
 }
-.ddmenu{
-    display: none;
+
+nav{/*https://www.youtube.com/watch?v=wlCPOwBr7no*/
+    width: 100%;
+    height: 8rem;
+    color: #000;
+    background-color: var(--greenblue);
 }
+
+.nav-list{
+    display: flex;
+    margin-left: 50px;
+}
+
+.nav-list li{
+    line-height: 3rem;
+    position: relative;
+}
+
+.sub-menu{
+    line-height: 4rem;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+}
+
+.nav-list a{
+    display: block;
+    color: var(--white);
+    padding: 0 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition:color 650ms;
+}
+
+.nav-list :hover{
+    background: var(--lightblue);
+}
+
+.sub-menu{
+    width: 50rem;
+    display: block;
+    position: absolute ;
+    background-color: white;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.sub-menu a:hover{
+    background-color: lightgrey;
+}
+
+.sub-menu a{
+    color: #000;
+    font-size: 14px;
+    
+}
+
+
+
+.nav-list :hover > .sub-menu{
+    opacity: 1 ;
+    visibility: visible;
+} 
+
+nav img{
+    height: 150px;
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 
 /* footer*/
@@ -92,26 +185,31 @@ width: 45px;
   /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
+.nyhed div{
+    padding: 40px 20px 0px 120px;/*top/right/bottom/left*/
+}
+
 .nyhed h1 {
     font-size: 32px;
-    padding-top: 70px;
-    padding-left: 100px;
+    font-weight: bolder;
+    
 }
 
 .nyhed p{
     font-size: 16px ;
-    margin-top: 25px;
-    margin-left: 100px;
+    margin-bottom:20px;
 }
 
 .nyhed button{
-    margin-left: 20%;
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
 }
 .populærekategori{
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 500px;
     box-sizing: border-box;
 }
 
@@ -141,7 +239,7 @@ width: 45px;
 .værksted{
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 500px;
     box-sizing: border-box;
 }
 
@@ -159,32 +257,35 @@ width: 45px;
      /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
-.værksted h1{
-    font-size: 32px;
+.overskrift{
+    font-size: 2px;
     text-align: center;
+    font-weight: 300;
 }
 
 .værksted p{
     font-size: 16px;
-    padding:0px 30px 20px 30px;
+    padding:0px 30px 30px 30px;
+    font-weight: lighter;
 }
 
 .værksted a{
     padding: 10px 30px;
+
 
 }
 
 .tilbud{
     position: relative;
     width:100%;
-    height: 400px;
+    height: 500px;
     box-sizing: border-box;
 }
 
 .tilbud:after{
     position:absolute ;
     content: '';
-    background-color:var(--white);
+    background-color: #fff;
     top:-100px;
     right: 0;
     bottom: 0;
@@ -210,7 +311,7 @@ width: 45px;
     position:absolute;
     content: '';
     background-image: url("img/gettyimages-168346757_web.jpg");
-    top:-100px;
+    top:-50px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -280,6 +381,35 @@ width: 45px;
      /*https://www.youtube.com/watch?v=6QGOhCZLdhs */
 }
 
+
+.pris{
+    font-size: 12px;
+    display: flex;
+    font-weight: bold;
+}
+   
+.prisfør{
+   color: rgb(214, 0, 0);
+   margin-right: 10px;
+}
+
+.slids{
+  margin-left: 80px;
+}
+
+.slids img{
+    width: 80%;
+    height: 200px;
+}
+
+.slids button{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+
+
 button{
     background-color: var(--brown);
     border: none;
@@ -287,32 +417,149 @@ button{
     font-size:16px ;
     text-align: center;
     padding: 10px 100px;
-    border-radius: 25px; 
+    border-radius: 10px; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin: auto;
     display: flex;
     justify-content: center;
+
     /*https://www.w3schools.com/css/css3_buttons.asp*/
 }
 
-.slids{
-    display: flex;
-}
+
 
 
 
 /*produktbeskrivelse*/
 
+
+
 .produktbesk{
-    margin-left: 7.5%;
+    margin-left: 4%;
     margin-right: 8%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 80px;
     padding-top: 300px;
-    padding-bottom: 20px;
+    padding-bottom: 370px;
     background-color: #FFFFFF;
     display: flex;
 }
+
+.produkttekst{
+    
+    position: relative;
+    left: 60px;
+    top: -335px;
+    line-height: 2;
+    
+}
+
+.produkttekst h4{
+    font-weight: normal;
+}
+
+.stelknap{
+position: relative;
+top: -320px;
+left: 48px;
+border: none;
+color: white;
+padding: 0rem;
+}
+
+.detaljerboks{
+    margin-left: 4%;
+    margin-right: 8%;
+    margin-bottom: -280px;
+    margin-top: -250px;
+    padding-top: 250px;
+    padding-bottom: 300px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+.detaljertekst{
+    position: relative;
+    top: -200px;
+    left: 27px;
+    text-align: left;
+    line-height: 1.4;
+     }
+     .detaljertekst2{
+        position: relative;
+        top: -150px;
+        left: 27px;
+        text-align: left;   
+        line-height: 2;
+    }
+
+    
+    
+    /*Følgende kode kommer fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select:*/
+    
+    .custom-select {
+        position: relative;
+        font-family: Arial;
+        top: -837px;
+        left: 148px;
+      }
+      
+      .custom-select select {
+        display: none; /*hide original SELECT element:*/
+      }
+      
+      .select-selected {
+        background-color: white;
+      }
+      
+      /*style the arrow inside the select element:*/
+      .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 8px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: black transparent transparent transparent;
+      }
+      
+      /*point the arrow upwards when the select box is open (active):*/
+      .select-selected.select-arrow-active:after {
+        border-color: transparent transparent black transparent;
+        top: 7px;
+      }
+      
+      /*style the items (options), including the selected item:*/
+      .select-items div,.select-selected {
+        color: black;
+        padding: 2px px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      /*style items (options):*/
+      .select-items {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+      
+      /*hide the items when the select box is closed:*/
+      .select-hide {
+        display: none;
+      }
+      
+      .select-items div:hover, .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+
 
 .gul_cykel{
     max-width: 100%;
@@ -471,6 +718,14 @@ button{
     background-color: var(--white);
 }
 
+
+
+/*
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
+https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
+*/
+
 .mail-h1 {
     height: 20px;
     border-style: solid;
@@ -503,6 +758,7 @@ button{
     border-radius: 10px;
 }
 
+
 /*Brugt til siden "mere"*/
 /*https://www.w3schools.com/tags/tag_input.asp besøgt d. 2/6
 https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
@@ -526,60 +782,100 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     width:35px;
 }
 
-.ddmenu{/* drop down menu*/
-    background-color: white;
-    height: 60px;
-    padding: 25px 90px 25px 90px;
-       
-}
 
-.ddmenu img{
-    width: 100px;
-    height: 100px;
-}
 
-.ddmenu ul li{
-    float: left;
-    position: relative;
-}
-
-.ddmenu ul li a{/*skal skiftes*/
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;/*menu font*/
-    font-size: 24px;
-    padding: 24px 24px;
-}
-
-.ddmenu ul li ul{
-    display: none;
-    position: absolute;
-    background-color: white;
-    padding: 10px;
-
-}
-
-.ddmenu ul li:hover ul{
-    display: flex;
-}
-
-.ddmenu ul li:hover .ul2{
-    display: flex;
-    margin-top: 350px;
-}
-
-.ddmenu ul li ul li a{
-    padding: 12px 14px;
-}
-
-.ddmenu ul li ul li a:hover{
-    background-color:#f3f3f3;
-}
-
-.ddmenu .mere{
-    float: right;
-}
 /*index*/
-.populærekategori img
+.nyhed div{
+   margin-left: 1100px;
+}
+
+.nyhed h1{
+    padding-top: 0px ;
+    font-size: 48px;
+}
+
+.nyhed p{
+    font-size: 24px;
+}
+
+.nyhed button{
+    margin: 0;
+    width: 80%;
+}
+
+.værksted{
+    display: flex;
+}
+
+.værksted div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.værksted .overskrift{
+    font-size: 48px;
+}
+
+.værksted p{
+    font-size: 24px;
+}
+
+.værksted img{
+    height: 350px;
+    width: 300px;   
+}
+
+.miljø{
+    display: flex;
+    color: #000;
+}
+
+.miljø div{
+    text-align: right;
+    padding-left: 450px;
+    padding-right: 50px ;
+    margin-top: -50px;
+}
+
+.miljø .overskrift{
+    font-size: 48px;
+}
+
+.miljø p{
+    font-size: 24px;
+    margin-left: 200px;
+}
+
+.miljø img{
+    height: 350px;
+    width: 300px;   
+}
+
+.slidspc div{
+    margin: 0;
+}
+
+.slidspc{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slidspc img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.slidspc button{
+    width: 100%;
+}
+
+
+.pris{
+    font-size: 24px;
+}
 
 
 
@@ -737,15 +1033,70 @@ Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
 Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
 
+/*cykler imi */
+.cykler-alt{
+    display: grid;
+    display: none;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+.cykler-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .damecyklergrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 30px;
+    justify-content: center; 
+    background-position: center;
+    display: flex;
+  }
+
+  .hvid-baggrund {
+      width: 80%;
+      height: 90%;
+      background-color: var(--white);
+  }
+
+  .damecykler button {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      
+  }
+  .damecykler {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ 
+
+   /*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 
+*/
 @media (min-width:1000px){
 
 /*index baggrund*/
 .nyhed{
-    height: 550px;
+    height: 600px;
 }
 
 .populærekategori{
-    height: 600px;
+    height: 450px;
 }
 
 .populærekategori:after{
@@ -762,7 +1113,7 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 }
 
 .tilbud{
-    height: 600px;
+    height: 650px;
 }
 
 .miljø{
@@ -778,4 +1129,113 @@ Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 .lejencykel:after{
     top:-200px
 }
+
+/*footer style*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 95px;
+        
+}
+
+footer div{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+.slids{
+    display: none;
+}
+
+
+
+
+}
+
+@media (max-width:700px){ /*mobil-format*/
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+      }
+
+    .slidspc{
+        display: none;
+    }
+    .miljø img{
+        display: none;
+    }
+
+    .værksted img{
+        display: none;
+    }
+
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        align-items: initial;
+        flex-direction: column;
+        background-color: var(--white);
+        z-index: 1000;
+    }
+
+    .nav-list > li{
+        line-height: 4rem;
+    }
+
+    .nav-list :hover{
+        background-color: lightgrey;
+    }
+    .sub-menu{
+        position: initial;
+        border: 3px solid transparent;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+
+    .nav-list li :hover> .sub-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    
+
+    .menu-icons{
+        display: block;
+    }    
+
+    .ion-md-close{
+        display: none;
+    }
+
+    nav.active .ion-md-close{
+        display: block;
+        color: black;
+    }
+
+    nav.active .ion-md-menu{
+        display: none;
+    }
+
+    nav.active .nav-list{
+        display: flex;
+    }
+
 }
