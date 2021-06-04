@@ -15,6 +15,43 @@ list-style: none;
 font-family: 'mukta malar';
 }
 
+
+
+@media (max-width:700px){ /*mobil-format*/
+    .ddmenu img{
+        display: none;
+    }
+    .ddmenu{
+        display: none;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+      }
+
+    .slidspc{
+        display: none;
+    }
+    .miljø img{
+        display: none;
+    }
+
+    .værksted img{
+        display: none;
+    }
+}
+
+
 /*body*/
 body{
     background-color: #CAD7D9;
@@ -29,11 +66,6 @@ margin-top: 100px;
     background: #EFEFEF;
     display: flex;
     justify-content: space-evenly;
-}
-
-.topnav img{
-    height:100%;
-    width:35px;
 }
 
 .topnav img {
@@ -176,6 +208,7 @@ nav img{
 .sub-menu :hover{
     background: white;
 }
+b
 
 
 
@@ -473,134 +506,16 @@ button{
 
 /*produktbeskrivelse*/
 
-
-
 .produktbesk{
-    margin-left: 4%;
+    margin-left: 7.5%;
     margin-right: 8%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-top: 80px;
     padding-top: 300px;
-    padding-bottom: 370px;
+    padding-bottom: 20px;
     background-color: #FFFFFF;
     display: flex;
 }
-
-.produkttekst{
-    
-    position: relative;
-    left: 60px;
-    top: -335px;
-    line-height: 2;
-    
-}
-
-.produkttekst h4{
-    font-weight: normal;
-}
-
-.stelknap{
-position: relative;
-top: -320px;
-left: 48px;
-border: none;
-color: white;
-padding: 0rem;
-}
-
-.detaljerboks{
-    margin-left: 4%;
-    margin-right: 8%;
-    margin-bottom: -280px;
-    margin-top: -250px;
-    padding-top: 250px;
-    padding-bottom: 300px;
-    background-color: #FFFFFF;
-    display: flex;
-}
-
-.detaljertekst{
-    position: relative;
-    top: -200px;
-    left: 27px;
-    text-align: left;
-    line-height: 1.4;
-     }
-     .detaljertekst2{
-        position: relative;
-        top: -150px;
-        left: 27px;
-        text-align: left;   
-        line-height: 2;
-    }
-
-    
-    
-    /*Følgende kode kommer fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select:*/
-    
-    .custom-select {
-        position: relative;
-        font-family: Arial;
-        top: -837px;
-        left: 148px;
-      }
-      
-      .custom-select select {
-        display: none; /*hide original SELECT element:*/
-      }
-      
-      .select-selected {
-        background-color: white;
-      }
-      
-      /*style the arrow inside the select element:*/
-      .select-selected:after {
-        position: absolute;
-        content: "";
-        top: 8px;
-        right: 10px;
-        width: 0;
-        height: 0;
-        border: 6px solid transparent;
-        border-color: black transparent transparent transparent;
-      }
-      
-      /*point the arrow upwards when the select box is open (active):*/
-      .select-selected.select-arrow-active:after {
-        border-color: transparent transparent black transparent;
-        top: 7px;
-      }
-      
-      /*style the items (options), including the selected item:*/
-      .select-items div,.select-selected {
-        color: black;
-        padding: 2px px;
-        border: 1px solid transparent;
-        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-        cursor: pointer;
-        user-select: none;
-      }
-      
-      /*style items (options):*/
-      .select-items {
-        position: absolute;
-        background-color: white;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 99;
-      }
-      
-      /*hide the items when the select box is closed:*/
-      .select-hide {
-        display: none;
-      }
-      
-      .select-items div:hover, .same-as-selected {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-
-
 
 .gul_cykel{
     max-width: 100%;
@@ -763,14 +678,6 @@ padding: 0rem;
     background-color: var(--white);
 }
 
-
-
-/*
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2
-https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
-*/
-
 .mail-h1 {
     height: 20px;
     border-style: solid;
@@ -809,6 +716,77 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_align_image
 https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
 https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 
+/*cykler imi */
+.cykler-alt{
+    display: none;
+    
+}
+.cykler-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .damecyklergrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 30px;
+    justify-content: center; 
+    background-position: center;
+    display: flex;
+  }
+
+  .hvid-baggrund {
+      width: 80%;
+      height: 90%;
+      background-color: var(--white);
+  }
+
+  .damecykler button {
+      height: 50px;
+      width: 250px;
+      padding:5%;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .row {
+      display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+ 
+
+  .damecykler {
+
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.damecykler h2{
+    padding:10px;
+}
+
+.damecykler img{
+    width: 250px;
+}
+
+ 
+
+   /*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
+
 
 @media (min-width:700px){ /*laptop-format*/
 /*pc style - Yulin*/
@@ -827,7 +805,9 @@ https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
     width:35px;
 }
 
-
+.ddmenu{/* drop down menu*/
+   
+}
 
 /*index*/
 .nyhed div{
@@ -1058,7 +1038,14 @@ footer p{
     width: 450px;
 }
 
+
+
+/*Imi pc format*/
+/*cykler imi */
+.cykler-alt{
+    display: block; 
 }
+
 
 
 /*Brugt til "mærker"
@@ -1079,61 +1066,7 @@ Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
 Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
 
-/*cykler imi */
-.cykler-alt{
-    display: grid;
-    display: none;
-    grid-template-columns: auto auto;
-    grid-gap: 40px 20px;
-    padding-left: 240px;
-}
-.cykler-menu {
-    background-color: var(--white);
-    height: 70%;
-    width: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 30px;
-    margin-top: 100px;
-  }
-  .damecyklergrid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px 30px;
-    justify-content: center; 
-    background-position: center;
-    display: flex;
-  }
 
-  .hvid-baggrund {
-      width: 80%;
-      height: 90%;
-      background-color: var(--white);
-  }
-
-  .damecykler button {
-      height: 40px;
-      width: 40px;
-      display: flex;
-      
-  }
-  .damecykler {
-    padding: 20px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
- 
-
-   /*Brugt til "mærker"
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 
-*/
 @media (min-width:1000px){
 
 /*index baggrund*/
@@ -1197,9 +1130,6 @@ footer p{
 .slids{
     display: none;
 }
-
-
-
 
 }
 
@@ -1291,3 +1221,4 @@ footer p{
     }
 
 }
+
