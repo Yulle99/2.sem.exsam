@@ -570,6 +570,77 @@ button{
 https://www.youtube.com/watch?v=6QGOhCZLdhs besøgt d. 1/6
 https://www.javatpoint.com/how-to-center-a-button-in-css besøgt d. 2/6*/
 
+/*cykler imi */
+.cykler-alt{
+    display: none;
+    
+}
+.cykler-menu {
+    background-color: var(--white);
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 100px;
+  }
+  .damecyklergrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 30px;
+    justify-content: center; 
+    background-position: center;
+    display: flex;
+  }
+
+  .hvid-baggrund {
+      width: 80%;
+      height: 90%;
+      background-color: var(--white);
+  }
+
+  .damecykler button {
+      height: 50px;
+      width: 250px;
+      padding:5%;
+      display: flex;
+      justify-content: center;
+      
+  }
+
+  .row {
+      display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    padding-left: 240px;
+}
+ 
+
+  .damecykler {
+
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.damecykler h2{
+    padding:10px;
+}
+
+.damecykler img{
+    width: 250px;
+}
+
+ 
+
+   /*Brugt til "mærker"
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
+https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 */
+
 
 @media (min-width:700px){ /*laptop-format*/
 /*pc style - Yulin*/
@@ -820,7 +891,15 @@ footer p{
 .send-besked {
     width: 450px;
 }
+
+
+/*Imi pc format*/
+/*cykler imi */
+.cykler-alt{
+    display: block;
+    
 }
+
 
 
 /*Brugt til "mærker"
@@ -841,61 +920,7 @@ Raleigh logo: https://motorcycle-logos.com/raleigh-bikes-logo/
 Winther logo: https://power2bike.com/elcykel-batteri/winther-elcykler/
 */
 
-/*cykler imi */
-.cykler-alt{
-    display: grid;
-    display: none;
-    grid-template-columns: auto auto;
-    grid-gap: 40px 20px;
-    padding-left: 240px;
-}
-.cykler-menu {
-    background-color: var(--white);
-    height: 70%;
-    width: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 30px;
-    margin-top: 100px;
-  }
-  .damecyklergrid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px 30px;
-    justify-content: center; 
-    background-position: center;
-    display: flex;
-  }
 
-  .hvid-baggrund {
-      width: 80%;
-      height: 90%;
-      background-color: var(--white);
-  }
-
-  .damecykler button {
-      height: 40px;
-      width: 40px;
-      display: flex;
-      
-  }
-  .damecykler {
-    padding: 20px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
- 
-
-   /*Brugt til "mærker"
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid
-https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2 
-=======
 @media (min-width:1000px){
 
 /*index baggrund*/
@@ -960,5 +985,5 @@ footer p{
     display: none;
 }
 
-}
+
 
